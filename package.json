@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --hot --progress --colors",
     "build": "webpack --progress --colors",
     "test": "tape -r babel-register ./project/tests/**/*.js | tap-spec",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "update": "updtr"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "style-loader": "^0.13.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1",
+    "updtr": "^0.2.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   }
