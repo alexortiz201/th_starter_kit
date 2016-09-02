@@ -1,7 +1,7 @@
 {
-  "name": "bank_transactions",
+  "name": "TH Starter Kit",
   "version": "0.0.0",
-  "description": "Transaction Sample App (React + Redux + Webpack)",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "webpack-dev-server --hot --progress --colors",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/alexortiz201/Transactional_App.git"
+    "url": "git+ssh://git@github.com/alexortiz201/th_starter_kit.git"
   },
   "author": "Alex Ortiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alexortiz201/Transactional_App/issues"
+    "url": "https://github.com/alexortiz201/th_starter_kit/issues"
   },
-  "homepage": "https://github.com/alexortiz201/Transactional_App#readme",
+  "homepage": "https://github.com/alexortiz201/th_starter_kit",
   "dependencies": {
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
