@@ -1,5 +1,5 @@
 {
-  "name": "TH Starter Kit",
+  "name": "TH_Starter_Kit",
   "version": "0.0.0",
   "description": "",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "build": "webpack --progress --colors",
     "lint": "eslint ./project/**/*.js",
     "test": "tape -r babel-register ./project/**/*.test.js | tap-spec",
-    "test:watch": "npm test -- --watch",
+    "watch": "watch 'npm run -s test' project",
     "update": "updtr && depcheck --ignores='babelify' "
   },
   "repository": {
@@ -44,6 +44,7 @@
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1",
     "updtr": "^0.2.1",
+    "watch": "^0.19.2",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
   }
