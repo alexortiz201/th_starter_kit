@@ -6,9 +6,10 @@
   "scripts": {
     "start": "webpack-dev-server --hot --progress --colors",
     "build": "webpack --progress --colors",
-    "test": "tape -r babel-register ./project/tests/**/*.js | tap-spec",
+    "lint": "eslint ./project/**/*.js",
+    "test": "tape -r babel-register ./project/**/*.test.js | tap-spec",
     "test:watch": "npm test -- --watch",
-    "update": "updtr"
+    "update": "updtr && depcheck --ignores='babelify' "
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,7 @@
   "homepage": "https://github.com/alexortiz201/Transactional_App#readme",
   "dependencies": {
     "react": "^15.0.2",
-    "react-dom": "^15.0.2",
-    "react-redux": "^4.4.5",
-    "redux": "^3.5.2",
-    "redux-logger": "^2.6.1"
+    "react-dom": "^15.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.7",
@@ -35,12 +33,13 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.8.0",
-    "css-loader": "^0.23.1",
-    "eslint": "^2.9.0",
+    "cheerio": "^0.22.0",
+    "css-loader": "^0.24.0",
+    "depcheck": "^0.6.4",
+    "eslint": "^3.4.0",
     "eslint-loader": "^1.3.0",
-    "eslint-plugin-react": "^5.0.1",
+    "eslint-plugin-react": "^6.2.0",
     "react-hot-loader": "^1.3.0",
-    "redux-devtools": "^3.2.0",
     "style-loader": "^0.13.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.1",
