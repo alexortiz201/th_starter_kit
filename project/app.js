@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Main from './pages/Main/Main'; // eslint-disable-line no-unused-vars
+import Main from './pages/Main/'; // eslint-disable-line no-unused-vars
 
 render(<Main />, document.getElementById('react'));

@@ -4,22 +4,32 @@ import './main.css';
 import createMain from './Main';
 
 // Components
-import { Button } from '../../components/Button/Button'; // eslint-disable-line no-unused-vars
+import createButton from '../../components/Button/Button';
+import createCustomInput from '../../components/CustomInput/CustomInput';
 
 const Main = createMain(React);
+
+/* eslint-disable no-unused-vars */
+const CustomInput = createCustomInput(React);
+const Button = createButton(React);
+/* eslint-enable no-unused-vars */
 
 const onClickFn = () => {
 	console.log('Click'); // eslint-disable-line
 };
 
-const render = (props) => {
+const render = (props) =>
 	<div className="row">
+		<CustomInput
+			type="text"
+			placeholderText="Type Thingy Here"
+			className="special-input" />
+
 		<Button
 			className="special"
 			onClickFn={props.onClickFn()}
 			text={'Special'} />
-	</div>
-};
+	</div>;
 
 Main.defaultProps = {
 	render,

@@ -12,7 +12,7 @@ var config = {
     module: {
         preLoaders: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 loader: "eslint-loader",
                 exclude: /node_modules/
             }
@@ -20,14 +20,9 @@ var config = {
 
         loaders: [
             {
-                test: /\.js?$/,
-                loader: 'babel',
-                exclude: /(node_modules)/,
-                query: {
-                    // https://github.com/babel/babel-loader#options
-                    cacheDirectory: true,
-                    presets: ['es2015', 'babel-preset-stage-0', 'react']
-                }
+              test: /\.(js|jsx)$/,
+              loader: 'babel-loader',
+              exclude: /(node_modules)/
             },
             { test: /\.css$/, loader: "style!css" }
         ]
