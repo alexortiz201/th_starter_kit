@@ -13,7 +13,7 @@ const CustomInput = createCustomInput(React);
 
 const defaultProps = {
 	type: 'text',
-	placholderText: 'Type Here',
+	placeholderText: 'Type Here',
 	className: 'test',
 };
 

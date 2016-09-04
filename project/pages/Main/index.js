@@ -27,7 +27,7 @@ const render = (props) =>
 
 		<Button
 			className="special"
-			onClickFn={props.onClickFn()}
+			onClickFn={() => props.onClickFn()}
 			text={'Special'} />
 	</div>;
 

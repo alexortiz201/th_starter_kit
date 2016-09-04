@@ -1,9 +1,9 @@
 export default React => ({
 	type = 'text',
-	placholderText = 'Type Here',
+	placeholderText = 'Type Here',
 	className = '',
 }) =>
 	<input
 		type={type}
-		placeholder={placholderText}
+		placeholder={placeholderText}
 		className={`input ${className}`} />;
